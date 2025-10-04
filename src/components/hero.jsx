@@ -43,7 +43,9 @@ export default function Hero() {
       </p>
       <button className="flex gap-[2px] border-2 rounded-sm py-[13px] px-[30px] text-accent animate-slide-in delay-2">
         {" "}
-        <Mail /> Say Hi!
+        <Mail 
+          href="mailto:okhakumhewill@gmail.com"
+        /> Say Hi!
       </button>
     </section>
   );

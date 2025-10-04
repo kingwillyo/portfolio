@@ -81,14 +81,14 @@ const Nav = () => {
             <Mail size={20} />
           </a>
           <a
-            href="your-github-url"
+            href="https://github.com/kingwillyo"
             className="hover:text-accent transition duration-300 ease-in-out"
             aria-label="GitHub"
           >
             <Github size={20} />
           </a>
           <a
-            href="your-linkedin-url"
+            href="https://www.linkedin.com/in/okhakumhe-will-26a533354/"
             className="hover:text-accent transition duration-300 ease-in-out"
             aria-label="LinkedIn"
           >
