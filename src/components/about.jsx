@@ -22,6 +22,7 @@ export default function About() {
   return (
     <section
       ref={aboutRef}
+      id="about"
       className="w-full min-h-[80vh] flex flex-col md:flex-row items-center justify-center px-4 md:px-0 max-w-[1000px] mx-auto py-20 gap-12"
     >
       {/* Left: Text Content */}
