@@ -49,3 +49,62 @@ body {
   0%, 50% { opacity: 1; }
   51%, 100% { opacity: 0; }
 }
+
+.hero-grid-background {
+  /* 1. Base dark background color for the section */
+  background-color: #0d0e11;
+  
+  /* 2. Stacked Background Images */
+  background-image: 
+    /* The Subtle Radial Glow (Soft Light Source) */
+    radial-gradient(circle at center, rgba(30, 40, 50, 0.2) 0%, rgba(13, 14, 17, 1) 70%),
+    
+    /* The Repeating Grid Lines (Layer 2 - Vertical) */
+    linear-gradient(to right, #1f2229 1px, transparent 1px),
+    /* The Repeating Grid Lines (Layer 3 - Horizontal) */
+    linear-gradient(to bottom, #1f2229 1px, transparent 1px);
+  
+  /* 3. Control repetition and size */
+  background-repeat: no-repeat, repeat, repeat;
+  background-size: cover, 50px 50px, 50px 50px;
+  background-position: center, 0 0, 0 0;
+}
+
+/* 1. Keyframes: Defines the movement (slide up 30px and fade in) */
+@keyframes slideUpFadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 2. Base Animation Class: Applied to ALL sliding elements */
+.animate-slide-in {
+  animation-duration: 0.8s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards; /* Keeps the element visible after animation */
+  animation-name: slideUpFadeIn;
+  /* Start invisible by default, overridden by animation */
+  opacity: 0; 
+}
+
+/* 3. Staggered Delay Classes: These create the sequence */
+
+/* Start delay: Used to wait for the typing animation (1.5s typing + 0.2s buffer) */
+.delay-1 {
+  animation-delay: 1.7s;
+}
+
+/* Subtitle delay: Starts 0.2s after the first element */
+.delay-2 {
+  animation-delay: 1.9s; 
+}
+
+/* Button delay: Starts 0.2s after the second element */
+.delay-3 {
+  animation-delay: 2.1s; 
+}

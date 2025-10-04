@@ -36,7 +36,7 @@ const Nav = () => {
           </a>
           <ul className="hidden md:flex gap-[24px]">
             <li>
-              <a href="#home" className="hover:text-accent transition duration-300 ease-in-out">
+              <a href="#hero" className="hover:text-accent transition duration-300 ease-in-out">
                 Home
               </a>
             </li>

@@ -1,14 +1,14 @@
-import React from 'react'
-import Nav from './components/nav'
-import Hero from './components/hero'
+import React from "react";
+import Hero from "./components/hero";
+import Nav from "./components/nav";
 
 const App = () => {
   return (
-    <main className='font-ntr'>
+    <main className="font-ntr">
       <Nav />
       <Hero />
     </main>
-  )
-}
+  );
+};
 
-export default App
+export default App;

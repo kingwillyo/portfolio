@@ -1,3 +1,4 @@
+import { Mail } from "lucide-react";
 import React, { useEffect, useRef } from "react";
 import Typed from "typed.js";
 
@@ -13,7 +14,7 @@ export default function Hero() {
       typeSpeed: 70,
       showCursor: true,
       cursorChar: "|",
-      loop: false, // only runs once
+      loop: false,
     });
 
     return () => {
@@ -22,15 +23,25 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="flex flex-col items-center justify-center h-screen bg-background text-primary">
-      <h1 className="text-4xl font-bold mb-6">
-        {/* The typed text goes here */}
+    <section className="flex flex-col items-center justify-center h-screen hero-grid-background text-primary mx-auto">
+      <h1 className="text-[46px] md:text-[86px] font-bold">
         <span ref={el}></span>
       </h1>
 
-      <p className="text-xl text-secondary">
+      <p className="text-[28px] md:text-[48px] text-secondary animate-slide-in delay-2">
         I build intuitive applications.
       </p>
+      <p className="text-[18px] md:text-[22px] text-secondary text-center mb-[50px] animate-slide-in delay-2">
+        I'm a Full-Stack Developer from Nigeria, mastering the complete product
+        lifecycle <br />
+        from pixel-perfect UI to secure API deployment. I specialize in
+        translating complex <br />
+        ideas into functional, high-performance end-to-end solutions.
+      </p>
+      <button className="flex gap-[2px] border-2 rounded-sm py-[13px] px-[30px] text-accent animate-slide-in delay-3">
+        {" "}
+        <Mail /> Say Hi!
+      </button>
     </section>
   );
 }
