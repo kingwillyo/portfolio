@@ -1,14 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=NTR&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=NTR&display=swap");
 
-@import 'tailwindcss';
+@import "tailwindcss";
 
 @utility flex-center {
   @apply flex justify-center items-center;
 }
 
 @font-face {
-  font-family: 'NTR', sans-serif;
-  src: url(/fonts/NTR-Regular.woff2) format('woff2');
+  font-family: "NTR", sans-serif;
+  src: url(/fonts/NTR-Regular.woff2) format("woff2");
 }
 
 @theme {
@@ -17,25 +17,31 @@
   --color-secondary: #9ca3af;
   --color-accent: #3b82f6;
   --color-accent-hover: #2563eb;
-  --font-ntr: 'NTR', sans-serif;
+  --font-ntr: "NTR", sans-serif;
 }
 
 html,
 body {
   width: 100%;
   scroll-behavior: smooth;
-  overflow: hidden;
   background-color: #121212;
   color: #fafafa;
 }
 
+@media (max-width: 640px) {
+  body {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+
 .scrolled {
   /* 1. Transparent Background with Opacity */
-  background-color: rgba(20, 20, 20, 0.7) !important; 
-  
+  background-color: rgba(20, 20, 20, 0.4) !important;
+
   /* 2. The Glass Effect (Frosted Look) */
   backdrop-filter: blur(10px) !important;
-  
+
   /* 3. Optional: Subtle Border */
   border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
 }
@@ -46,24 +52,32 @@ body {
 }
 
 @keyframes blink {
-  0%, 50% { opacity: 1; }
-  51%, 100% { opacity: 0; }
+  0%,
+  50% {
+    opacity: 1;
+  }
+  51%,
+  100% {
+    opacity: 0;
+  }
 }
 
 .hero-grid-background {
   /* 1. Base dark background color for the section */
   background-color: #0d0e11;
-  
+
   /* 2. Stacked Background Images */
   background-image: 
-    /* The Subtle Radial Glow (Soft Light Source) */
-    radial-gradient(circle at center, rgba(30, 40, 50, 0.2) 0%, rgba(13, 14, 17, 1) 70%),
-    
+    /* The Subtle Radial Glow (Soft Light Source) */ radial-gradient(
+      circle at center,
+      rgba(30, 40, 50, 0.2) 0%,
+      rgba(13, 14, 17, 1) 70%
+    ),
     /* The Repeating Grid Lines (Layer 2 - Vertical) */
-    linear-gradient(to right, #1f2229 1px, transparent 1px),
+      linear-gradient(to right, #1f2229 1px, transparent 1px),
     /* The Repeating Grid Lines (Layer 3 - Horizontal) */
-    linear-gradient(to bottom, #1f2229 1px, transparent 1px);
-  
+      linear-gradient(to bottom, #1f2229 1px, transparent 1px);
+
   /* 3. Control repetition and size */
   background-repeat: no-repeat, repeat, repeat;
   background-size: cover, 50px 50px, 50px 50px;
@@ -89,22 +103,22 @@ body {
   animation-fill-mode: forwards; /* Keeps the element visible after animation */
   animation-name: slideUpFadeIn;
   /* Start invisible by default, overridden by animation */
-  opacity: 0; 
+  opacity: 0;
 }
 
 /* 3. Staggered Delay Classes: These create the sequence */
 
 /* Start delay: Used to wait for the typing animation (1.5s typing + 0.2s buffer) */
 .delay-1 {
-  animation-delay: 1.7s;
+  animation-delay: 0.3s;
 }
 
 /* Subtitle delay: Starts 0.2s after the first element */
 .delay-2 {
-  animation-delay: 1.9s; 
+  animation-delay: 0.5s;
 }
 
 /* Button delay: Starts 0.2s after the second element */
 .delay-3 {
-  animation-delay: 2.1s; 
+  animation-delay: 0.7s;
 }
