@@ -1,6 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=NTR&display=swap');
+
 @import 'tailwindcss';
 
 @utility flex-center {
   @apply flex justify-center items-center;
 }
 
+@font-face {
+  font-family: 'NTR', sans-serif;
+  src: url(/fonts/NTR-Regular.woff2) format('woff2');
+}
+
+@theme {
+  --color-background: #121212;
+  --color-primary: #fafafa;
+  --color-secondary: #9ca3af;
+  --color-accent: #3b82f6;
+  --color-accent-hover: #2563eb;
+  --font-ntr: 'NTR', sans-serif;
+}
+
+html,
+body {
+  width: 100%;
+  scroll-behavior: smooth;
+  overflow: hidden;
+  background-color: #121212;
+  color: #fafafa;
+}
+
+.scrolled {
+  /* 1. Transparent Background with Opacity */
+  background-color: rgba(20, 20, 20, 0.7) !important; 
+  
+  /* 2. The Glass Effect (Frosted Look) */
+  backdrop-filter: blur(10px) !important;
+  
+  /* 3. Optional: Subtle Border */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+.typed-cursor {
+  color: var(--color-accent);
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
