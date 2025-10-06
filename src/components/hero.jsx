@@ -1,4 +1,4 @@
-import { Mail } from "lucide-react";
+import { Download } from "lucide-react";
 import React, { useEffect, useRef } from "react";
 import Typed from "typed.js";
 import TreeAnimation from "./TreeAnimation";
@@ -43,10 +43,14 @@ export default function Hero() {
         translating complex <br />
         ideas into functional, high-performance end-to-end solutions.
       </p>
-      <button className="flex gap-[2px] border-2 rounded-sm py-[13px] px-[30px] text-accent animate-slide-in delay-2">
-        {" "}
-        <Mail href="mailto:okhakumhewill@gmail.com" /> Say Hi!
-      </button>
+      <a
+        href="/resume.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="flex gap-[2px] border-2 rounded-sm py-[13px] px-[30px] text-accent animate-slide-in delay-2 hover:bg-accent hover:text-white transition-colors duration-300"
+      >
+        <Download size={20} /> Resume
+      </a>
     </section>
   );
 }

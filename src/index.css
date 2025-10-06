@@ -35,6 +35,12 @@ body {
   }
 }
 
+/* Base navbar styles for smooth transitions */
+nav {
+  transition: background-color 0.3s ease-in-out,
+    backdrop-filter 0.3s ease-in-out, box-shadow 0.3s ease-in-out !important;
+}
+
 .scrolled {
   /* 1. Transparent Background with Opacity */
   background-color: rgba(20, 20, 20, 0.4) !important;
@@ -42,8 +48,8 @@ body {
   /* 2. The Glass Effect (Frosted Look) */
   backdrop-filter: blur(10px) !important;
 
-  /* 3. Optional: Subtle Border */
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+  /* 3. Optional: Subtle Border - using box-shadow instead of border to avoid glitch */
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1) !important;
 }
 
 .typed-cursor {
@@ -121,4 +127,23 @@ body {
 /* Button delay: Starts 0.2s after the second element */
 .delay-3 {
   animation-delay: 0.7s;
+}
+
+/* Bullet point animation: slower and smoother than slide-in */
+@keyframes bulletIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-24px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.animate-bullet-in {
+  animation-name: bulletIn;
+  animation-duration: 1.6s;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  animation-fill-mode: both;
+  opacity: 0;
 }

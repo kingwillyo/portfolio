@@ -4,15 +4,18 @@ import profileImg from "../assets/profile.png";
 function useInView(options = {}) {
   const ref = useRef(null);
   const [inView, setInView] = useState(false);
+  const [hasAnimated, setHasAnimated] = useState(false);
 
   useEffect(() => {
-    const observer = new window.IntersectionObserver(
-      ([entry]) => setInView(entry.isIntersecting),
-      options
-    );
+    const observer = new window.IntersectionObserver(([entry]) => {
+      if (entry.isIntersecting && !hasAnimated) {
+        setInView(true);
+        setHasAnimated(true);
+      }
+    }, options);
     if (ref.current) observer.observe(ref.current);
     return () => observer.disconnect();
-  }, [options]);
+  }, [options, hasAnimated]);
 
   return [ref, inView];
 }
@@ -61,21 +64,60 @@ export default function About() {
         </p>
         <div className="grid grid-cols-2 gap-x-8 gap-y-2 mb-8">
           <ul className="space-y-2 text-accent text-base">
-            <li>▸ JavaScript (ES6+)</li>
-            <li>▸ TypeScript</li>
-            <li>▸ React.js</li>
-            <li>▸ Node.js</li>
+            <li
+              className="animate-bullet-in"
+              style={{ animationDelay: "1.5s" }}
+            >
+              ▸ JavaScript (ES6+)
+            </li>
+            <li
+              className="animate-bullet-in"
+              style={{ animationDelay: "1.7s" }}
+            >
+              ▸ TypeScript
+            </li>
+            <li
+              className="animate-bullet-in"
+              style={{ animationDelay: "1.9s" }}
+            >
+              ▸ React.js
+            </li>
+            <li
+              className="animate-bullet-in"
+              style={{ animationDelay: "2.1s" }}
+            >
+              ▸ Node.js
+            </li>
           </ul>
           <ul className="space-y-2 text-accent text-base">
-            <li>▸ Python</li>
-            <li>▸ Express.js</li>
-            <li>▸ PostgreSQL</li>
-            <li>▸ Tailwind CSS</li>
+            <li
+              className="animate-bullet-in"
+              style={{ animationDelay: "2.3s" }}
+            >
+              ▸ Python
+            </li>
+            <li
+              className="animate-bullet-in"
+              style={{ animationDelay: "2.5s" }}
+            >
+              ▸ Express.js
+            </li>
+            <li
+              className="animate-bullet-in"
+              style={{ animationDelay: "2.7s" }}
+            >
+              ▸ PostgreSQL
+            </li>
+            <li
+              className="animate-bullet-in"
+              style={{ animationDelay: "2.9s" }}
+            >
+              ▸ Tailwind CSS
+            </li>
           </ul>
         </div>
         <p className="text-secondary text-lg md:text-xl leading-relaxed">
-          Outside of work, I enjoy exploring new tech, playing video games, and
-          making music.
+          Outside of work, I enjoy exploring new tech, and playing video games.
         </p>
       </div>
       {/* Right: Profile Image Placeholder */}
