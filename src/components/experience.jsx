@@ -26,7 +26,7 @@ export default function Experience() {
     {
       company: "Bellbuy",
       title: "Founder & Full-Stack Developer",
-      period: "2024 - PRESENT",
+      period: "2025 - PRESENT",
       description: [
         "Founded and Built a mobile marketplace app for university students using React Native (Expo) and Supabase.",
         "Implemented secure authentication, university-based product filtering, and real-time buyer–seller chat.",
