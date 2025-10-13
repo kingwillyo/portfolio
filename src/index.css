@@ -28,12 +28,7 @@ body {
   color: #fafafa;
 }
 
-@media (max-width: 640px) {
-  body {
-    padding-left: 32px;
-    padding-right: 32px;
-  }
-}
+/* Mobile padding handled by component containers instead of body */
 
 /* Base navbar styles for smooth transitions */
 nav {

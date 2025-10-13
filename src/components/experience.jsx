@@ -37,7 +37,7 @@ export default function Experience() {
     {
       company: "Freelance",
       title: "Full-Stack Developer",
-      period: "2023 - 2023",
+      period: "2023 - 2024",
       description: [
         "Developed a custom web application for a client using modern JavaScript frameworks",
         "Built responsive, mobile-first application with focus on performance and user experience",
