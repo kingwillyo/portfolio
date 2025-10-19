@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=NTR&display=swap");
-
 @import "tailwindcss";
 
 @utility flex-center {
@@ -7,8 +5,11 @@
 }
 
 @font-face {
-  font-family: "NTR", sans-serif;
-  src: url(/fonts/NTR-Regular.woff2) format("woff2");
+  font-family: "NTR";
+  src: url("/fonts/NTR-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
 }
 
 @theme {

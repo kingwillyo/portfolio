@@ -50,7 +50,7 @@ export default function Experience() {
       title: "B.Sc. Computer Engineering",
       period: "2023 - 2028",
       description: [
-        "Expected graduation: 2024",
+        "Expected graduation: 2028",
         "Relevant coursework: Data Structures, Algorithms, Software Engineering, Databases, Machine Learning",
         "Dean's List (multiple years)",
         "Active member of the Engineering Society and Hackathon participant",

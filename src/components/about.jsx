@@ -127,6 +127,12 @@ export default function About() {
             src={profileImg}
             alt="Profile"
             className="object-cover w-full h-full rounded-lg"
+            loading="lazy"
+            decoding="async"
+            fetchpriority="low"
+            width="260"
+            height="320"
+            sizes="(min-width: 768px) 260px, 260px"
           />
         </div>
       </div>
