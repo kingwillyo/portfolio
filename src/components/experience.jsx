@@ -24,6 +24,18 @@ export default function Experience() {
 
   const experiences = [
     {
+      company: "Lullitcloud",
+      title: "Full-Stack Mobile developer",
+      period: "2025 - PRESENT",
+      description: [
+        "Developing and implementing features for their IOS/Android application",
+        "Collaborating closely with the UI/UX design team to translate wire frames and mock ups into functional code",
+        "Implementing API’s for various functionalities like notifications, data storage, educational content delivery",
+        "Writing clean, maintainable, and well-documented code.",
+        "Identifying and troubleshooting bugs and performance issues",
+      ],
+    },
+    {
       company: "Bellbuy",
       title: "Founder & Full-Stack Developer",
       period: "2025 - PRESENT",
