@@ -1,4 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
+import profileWebp1x from "../assets/profile-260.webp";
+import profileWebp2x from "../assets/profile-520.webp";
+import profilePng2x from "../assets/profile-optimized.png";
 import profileImg from "../assets/profile.png";
 
 function useInView(options = {}) {
@@ -120,20 +123,31 @@ export default function About() {
           Outside of work, I enjoy exploring new tech, and playing video games.
         </p>
       </div>
-      {/* Right: Profile Image Placeholder */}
+      {/* Right: Profile Image */}
       <div className="flex-1 flex items-center md:justify-end justify-center">
         <div className="w-[260px] h-[320px] bg-[#181b20] rounded-lg shadow-lg flex items-center justify-center overflow-hidden">
-          <img
-            src={profileImg}
-            alt="Profile"
-            className="object-cover w-full h-full rounded-lg"
-            loading="lazy"
-            decoding="async"
-            fetchpriority="low"
-            width="260"
-            height="320"
-            sizes="(min-width: 768px) 260px, 260px"
-          />
+          <picture>
+            <source
+              type="image/webp"
+              srcSet={`${profileWebp1x} 1x, ${profileWebp2x} 2x`}
+              sizes="(min-width: 768px) 260px, 260px"
+            />
+            <source
+              type="image/png"
+              srcSet={`${profileImg} 1x, ${profilePng2x} 2x`}
+              sizes="(min-width: 768px) 260px, 260px"
+            />
+            <img
+              src={profileImg}
+              alt="Profile"
+              className="object-cover w-full h-full rounded-lg"
+              loading="lazy"
+              decoding="async"
+              fetchpriority="low"
+              width="260"
+              height="320"
+            />
+          </picture>
         </div>
       </div>
     </section>
