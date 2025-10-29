@@ -4,6 +4,7 @@ import Experience from "./components/experience";
 import Hero from "./components/hero";
 import Nav from "./components/nav";
 import Projects from "./components/projects";
+import Footer from "./components/footer";
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
         <About />
         <Experience />
         <Projects />
+        <Footer />
       </div>
     </main>
   );
