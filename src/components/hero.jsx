@@ -46,7 +46,7 @@ export default function Hero() {
         </p>
         <div className="flex justify-center">
           <a
-            href="/resume.pdf"
+            href="/Resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="flex gap-[2px] border-2 rounded-sm py-[13px] px-[30px] text-accent animate-slide-in delay-2 hover:bg-accent hover:text-white transition-colors duration-300"

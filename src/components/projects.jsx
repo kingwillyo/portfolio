@@ -33,10 +33,12 @@ export default function Projects() {
       featured: true,
     },
     {
-      title: "Task Management Dashboard",
+      title: "Focus Fire",
       description:
-        "A full-stack task management application with real-time collaboration features. Built with modern web technologies and includes drag-and-drop functionality, team management, and progress tracking.",
-      technologies: "React.js, Node.js, PostgreSQL, Socket.io",
+        "Focus Fire is an MVP productivity application for iOS/Android that gamifies focus using a fire streak metaphor. It uses a physical Barcode Exit System and strong emotional consequences (loss aversion) to enforce deep focus.",
+      github: "https://github.com/kingwillyo/focus-fire",
+      technologies: "React Native, Supabase, PostgreSQL, TypeScript",
+      featured: true,
     },
     {
       title: "AI-Powered Chat Assistant",

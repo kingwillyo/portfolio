@@ -24,9 +24,20 @@ export default function Experience() {
 
   const experiences = [
     {
+      company: "Bux",
+      title: "Full-Stack Mobile developer",
+      period: "Oct 2025 - PRESENT",
+      description: [
+        "Contribute to a community-backed startup building an EV mobility app, developing features using React Native and TypeScript to enable flexible vehicle rentals.",
+        "Collaborate within a large, distributed team using Agile methodologies, participating in architectural discussions and code reviews to ensure scalability and performance.",
+        "Work closely with product and design teams to implement user-facing features focused on income generation and seamless user experience.",
+        "Writing clean, maintainable, and well-documented code.",
+      ],
+    },
+    {
       company: "Lullitcloud",
       title: "Full-Stack Mobile developer",
-      period: "2025 - PRESENT",
+      period: "Oct 2025 - PRESENT",
       description: [
         "Developing and implementing features for their IOS/Android application",
         "Collaborating closely with the UI/UX design team to translate wire frames and mock ups into functional code",
@@ -38,7 +49,7 @@ export default function Experience() {
     {
       company: "Bellbuy",
       title: "Founder & Full-Stack Developer",
-      period: "2025 - PRESENT",
+      period: "FEB 2025 - PRESENT",
       description: [
         "Founded and Built a mobile marketplace app for university students using React Native (Expo) and Supabase.",
         "Implemented secure authentication, university-based product filtering, and real-time buyer–seller chat.",
@@ -49,7 +60,7 @@ export default function Experience() {
     {
       company: "Freelance",
       title: "Full-Stack Developer",
-      period: "2023 - 2024",
+      period: "DEC 2023 - APRIL 2024",
       description: [
         "Developed a custom web application for a client using modern JavaScript frameworks",
         "Built responsive, mobile-first application with focus on performance and user experience",
