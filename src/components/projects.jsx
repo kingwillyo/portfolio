@@ -37,14 +37,15 @@ export default function Projects() {
       description:
         "Focus Fire is an MVP productivity application for iOS/Android that gamifies focus using a fire streak metaphor. It uses a physical Barcode Exit System and strong emotional consequences (loss aversion) to enforce deep focus.",
       github: "https://github.com/kingwillyo/focus-fire",
-      technologies: "React Native, Supabase, PostgreSQL, TypeScript",
+      technologies: "React Native, Firebase, PostgreSQL, TypeScript",
       featured: true,
     },
     {
-      title: "AI-Powered Chat Assistant",
+      title: "Savings Wallet",
       description:
-        "An intelligent chatbot application that integrates with multiple AI APIs. Features conversation history, context awareness, and customizable response styles for different use cases.",
-      technologies: "Python, Flask, OpenAI API, React.js",
+        "Simple way to help control your  savings ",
+      github: "https://github.com/kingwillyo/wallet-app",
+      technologies: "React Native, Supabase, PostgreSQL, TypeScript",
     },
     {
       title: "E-commerce Analytics Platform",
