@@ -1,10 +1,10 @@
 import React from "react";
 import About from "./components/about";
 import Experience from "./components/experience";
+import Footer from "./components/footer";
 import Hero from "./components/hero";
 import Nav from "./components/nav";
 import Projects from "./components/projects";
-import Footer from "./components/footer";
 
 const App = () => {
   return (

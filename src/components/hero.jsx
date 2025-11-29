@@ -38,11 +38,7 @@ export default function Hero() {
           I build intuitive applications.
         </p>
         <p className="text-[18px] md:text-[22px] text-secondary text-center mb-[50px] animate-slide-in delay-1">
-          I'm a Full-Stack Developer from Nigeria, mastering the complete
-          product lifecycle <br />
-          from pixel-perfect UI to secure API deployment. I specialize in
-          translating complex <br />
-          ideas into functional, high-performance end-to-end solutions.
+        I'm a Full-Stack Cross-Platform Developer from Nigeria. I deliver complete mobile solutions, <br /> mastering the entire lifecycle from crafting native-feeling UIs (iOS/Android) using frameworks <br />like React Native/Flutter to securing end-to-end API deployments.
         </p>
         <div className="flex justify-center">
           <a

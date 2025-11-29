@@ -50,9 +50,9 @@ export default function About() {
           </span>{" "}
           and{" "}
           <span className="text-accent font-semibold">founder of Bellbuy</span>.
-          I am passionate about building intuitive and high-performance
-          applications. I specialize in translating complex ideas into
-          functional, scalable solutions.
+          I am passionate about building intuitive, high-performance mobile
+          applications that feel truly native. I specialize in translating
+          complex ideas into functional, scalable cross-platform solutions.
         </p>
         <p className="text-secondary text-lg md:text-xl mb-6 leading-relaxed">
           I am also almost finished with my Bachelor's degree in
@@ -71,7 +71,7 @@ export default function About() {
               className="animate-bullet-in"
               style={{ animationDelay: "1.5s" }}
             >
-              ▸ JavaScript (ES6+)
+              ▸ React Native
             </li>
             <li
               className="animate-bullet-in"
@@ -97,7 +97,7 @@ export default function About() {
               className="animate-bullet-in"
               style={{ animationDelay: "2.3s" }}
             >
-              ▸ Python
+              ▸ Redux
             </li>
             <li
               className="animate-bullet-in"

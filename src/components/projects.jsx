@@ -46,24 +46,15 @@ export default function Projects() {
         "Simple way to help control your  savings ",
       github: "https://github.com/kingwillyo/wallet-app",
       technologies: "React Native, Supabase, PostgreSQL, TypeScript",
+      featured: true,
     },
     {
-      title: "E-commerce Analytics Platform",
+      title: "Social App Onboarding Flow",
       description:
-        "A comprehensive analytics dashboard for e-commerce businesses. Provides insights on sales performance, customer behavior, and inventory management with interactive visualizations.",
-      technologies: "Vue.js, D3.js, Express.js, MongoDB",
-    },
-    {
-      title: "Weather Forecast App",
-      description:
-        "A responsive weather application with location-based forecasting. Features 7-day forecasts, weather maps, and personalized recommendations based on weather conditions.",
-      technologies: "JavaScript, HTML/CSS, OpenWeather API",
-    },
-    {
-      title: "Budget Tracker",
-      description:
-        "A personal finance management tool that helps users track expenses, set budgets, and analyze spending patterns. Includes data visualization and export functionality.",
-      technologies: "React.js, Chart.js, LocalStorage, CSS3",
+        "An onboarding Screen workflow for kairo dev Test",
+      technologies: "React Native, TypeScript, Expo",
+      github: "https://github.com/kingwillyo/social-app-assignment",
+      featured: true,
     },
   ];
 
