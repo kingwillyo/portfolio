@@ -1,6 +1,6 @@
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { Github, Linkedin, Mail } from "lucide-react";
+import { Github, Linkedin, Mail, TwitterIcon } from "lucide-react";
 import React, { useEffect, useRef } from "react";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -93,6 +93,13 @@ const Nav = () => {
             aria-label="LinkedIn"
           >
             <Linkedin size={20} />
+          </a>
+          <a
+            href="https://www.x.com/notyourbaewill/"
+            className="hover:text-accent transition duration-300 ease-in-out"
+            aria-label="X"
+          >
+            <TwitterIcon size={20} />
           </a>
         </div>
       </div>
