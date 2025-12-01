@@ -139,7 +139,7 @@ export default function Experience() {
 
         {/* Right: Experience Details */}
         <div
-          className={`flex-1 h-[500px] overflow-y-auto${
+          className={`flex-1 h-[300px] overflow-y-auto${
             experienceInView ? " animate-slide-in delay-3" : " opacity-0"
           }`}
         >
